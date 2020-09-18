@@ -1,4 +1,4 @@
-update=9/18/2020 9:58:57 AM
+update=9/18/2020 12:06:30 PM
 version=1
 last_client=eeschema
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=schematic_layout.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=PDFs/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
