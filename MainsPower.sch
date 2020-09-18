@@ -288,7 +288,7 @@ Wire Notes Line
 	6300 950  6300 2650
 Wire Notes Line
 	3200 2650 3200 950 
-Text Notes 3900 950  2    50   ~ 0
+Text Notes 3900 900  2    50   ~ 0
 AC/DC Conversion
 Wire Wire Line
 	3250 1600 3600 1600
@@ -299,7 +299,7 @@ VACN
 Wire Wire Line
 	3900 1600 4450 1600
 Text Label 3250 1600 0    50   ~ 0
-VACN
+VACL
 Wire Notes Line
 	3200 2650 6300 2650
 Wire Notes Line
@@ -308,8 +308,8 @@ $Comp
 L ReflowOven:MAX4684_5 U?
 U 1 1 5F6C751D
 P 2750 4500
-F 0 "U?" H 2750 5415 50  0000 C CNN
-F 1 "MAX4684_5" H 2750 5324 50  0000 C CNN
+F 0 "U?" H 2350 5300 50  0000 C CNN
+F 1 "MAX4684_5" H 3000 5300 50  0000 C CNN
 F 2 "" H 2550 5050 50  0001 C CNN
 F 3 "" H 2550 5050 50  0001 C CNN
 	1    2750 4500
@@ -382,9 +382,6 @@ Wire Wire Line
 	5300 4400 5300 4550
 Wire Wire Line
 	5300 4550 5200 4550
-Wire Wire Line
-	5300 4550 6150 4550
-Connection ~ 5300 4550
 Text Label 6150 4550 2    50   ~ 0
 VACN
 Wire Wire Line
@@ -541,23 +538,26 @@ Wire Notes Line
 	6300 5950 6300 2850
 Text Notes 1600 2800 2    50   ~ 0
 Output Relay Switching
-$Comp
-L Device:Fuse F?
-U 1 1 5F74E046
-P 5300 3900
-F 0 "F?" V 5103 3900 50  0000 C CNN
-F 1 "12A" V 5194 3900 50  0000 C CNN
-F 2 "" V 5230 3900 50  0001 C CNN
-F 3 "~" H 5300 3900 50  0001 C CNN
-	1    5300 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4950 3900 5150 3900
 Connection ~ 4950 3900
 Text Label 6150 3900 2    50   ~ 0
 LN_NEUTRAL_OUT
-Wire Wire Line
-	5450 3900 6150 3900
 NoConn ~ 5650 2000
+$Comp
+L Device:Fuse F?
+U 1 1 5F75BE1A
+P 5650 4550
+F 0 "F?" V 5453 4550 50  0000 C CNN
+F 1 "12A" V 5544 4550 50  0000 C CNN
+F 2 "" V 5580 4550 50  0001 C CNN
+F 3 "~" H 5650 4550 50  0001 C CNN
+	1    5650 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4550 5500 4550
+Connection ~ 5300 4550
+Wire Wire Line
+	5800 4550 6150 4550
+Wire Wire Line
+	4950 3900 6150 3900
 $EndSCHEMATC
