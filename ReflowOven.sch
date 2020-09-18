@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -28,12 +28,14 @@ S 1850 1600 1400 1100
 U 5F641519
 F0 "MainsPower" 50
 F1 "MainsPower.sch" 50
+F2 "RELAY_SET" I R 3250 2600 50 
 $EndSheet
 $Sheet
 S 5250 3450 1400 1100
 U 5F6415F0
 F0 "Microcontroller" 50
 F1 "Microcontroller.sch" 50
+F2 "RELAY_SET" O L 5250 3600 50 
 $EndSheet
 $Sheet
 S 1900 5800 1400 1100
@@ -53,4 +55,10 @@ U 5F641C10
 F0 "Communication" 50
 F1 "Communication.sch" 50
 $EndSheet
+Wire Wire Line
+	4500 3600 4500 2600
+Wire Wire Line
+	4500 2600 3250 2600
+Wire Wire Line
+	4500 3600 5250 3600
 $EndSCHEMATC
