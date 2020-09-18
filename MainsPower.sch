@@ -381,7 +381,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 4550 5200 4550
 Text Label 6150 4550 2    50   ~ 0
-VACN
+VACL
 Wire Wire Line
 	4750 4050 4750 3900
 Wire Wire Line
@@ -538,7 +538,7 @@ Text Notes 1600 2800 2    50   ~ 0
 Output Relay Switching
 Connection ~ 4950 3900
 Text Label 6150 3900 2    50   ~ 0
-LN_NEUTRAL_OUT
+LN_OUT
 NoConn ~ 5650 2000
 $Comp
 L Device:Fuse F?
@@ -572,7 +572,7 @@ $EndComp
 Wire Wire Line
 	7800 3300 7000 3300
 Text Label 7000 3300 0    50   ~ 0
-LN_NEUTRAL_OUT
+VACN
 Wire Wire Line
 	7800 3600 7000 3600
 Wire Wire Line
@@ -591,7 +591,7 @@ F 3 "" H 7550 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7000 3600 0    50   ~ 0
-VACL
+LN_OUT
 $Comp
 L ReflowOven:IEC320-C14 J?
 U 1 1 5F784C5C
