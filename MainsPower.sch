@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -359,8 +359,6 @@ F 3 "" H 2000 3750 50  0001 C CNN
 	1    2000 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1400 4050 0    50   Input ~ 0
-RELAY_SET
 Wire Wire Line
 	3950 4850 3950 5000
 $Comp
@@ -648,4 +646,6 @@ Wire Notes Line
 	6450 4400 6450 2850
 Text Notes 6450 2800 0    50   ~ 0
 Output Connector
+Text HLabel 1400 4050 0    50   Input ~ 0
+RELAY_SET
 $EndSCHEMATC
