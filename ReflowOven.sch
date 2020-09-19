@@ -24,18 +24,14 @@ Jaden Bottemiller\nDylan Tomberlin
 Wire Notes Line
 	10200 6950 11200 6950
 $Sheet
-S 1850 1600 1400 1100
-U 5F641519
-F0 "MainsPower" 50
-F1 "MainsPower.sch" 50
-F2 "RELAY_SET" I R 3250 2600 50 
-$EndSheet
-$Sheet
 S 5250 3450 1400 1100
 U 5F6415F0
 F0 "Microcontroller" 50
 F1 "Microcontroller.sch" 50
 F2 "RELAY_SET" O L 5250 3600 50 
+F3 "CURRENT_ALRT" I L 5250 3700 50 
+F4 "I2C_SCL" B L 5250 3800 50 
+F5 "I2C_SDA" B L 5250 3900 50 
 $EndSheet
 $Sheet
 S 1900 5800 1400 1100
@@ -56,9 +52,37 @@ F0 "Communication" 50
 F1 "Communication.sch" 50
 $EndSheet
 Wire Wire Line
-	4500 3600 4500 2600
+	4500 3600 4500 2300
 Wire Wire Line
-	4500 2600 3250 2600
+	4500 2300 3400 2300
 Wire Wire Line
 	4500 3600 5250 3600
+$Sheet
+S 2000 1700 1400 1100
+U 5F641519
+F0 "MainsPower" 50
+F1 "MainsPower.sch" 50
+F2 "RELAY_SET" I R 3400 2300 50 
+F3 "CURRENT_ALRT" O R 3400 2400 50 
+F4 "I2C_SCL" B R 3400 2550 50 
+F5 "I2C_SDA" B R 3400 2650 50 
+$EndSheet
+Wire Wire Line
+	5250 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 2400
+Wire Wire Line
+	4400 2400 3400 2400
+Wire Wire Line
+	3400 2550 4250 2550
+Wire Wire Line
+	4250 2550 4250 3800
+Wire Wire Line
+	4250 3800 5250 3800
+Wire Wire Line
+	4150 3900 4150 2650
+Wire Wire Line
+	4150 2650 3400 2650
+Wire Wire Line
+	4150 3900 5250 3900
 $EndSCHEMATC
