@@ -85,4 +85,10 @@ Wire Wire Line
 	4150 2650 3400 2650
 Wire Wire Line
 	4150 3900 5250 3900
+$Sheet
+S 5100 5800 1300 1050
+U 5F67E1E1
+F0 "ThermocoupleAmp" 50
+F1 "ThermocoupleAmp.sch" 50
+$EndSheet
 $EndSCHEMATC

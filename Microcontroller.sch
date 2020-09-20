@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -411,4 +411,95 @@ Wire Notes Line
 	3750 6700 6900 6700
 Text Notes 3750 6650 0    50   ~ 0
 Microcontroller Decoupling
+Text HLabel 4300 3700 0    50   Input ~ 0
+CURRENT_ALRT
+Text HLabel 4300 4000 0    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 6950 4800 2    50   BiDi ~ 0
+I2C_SCL
+Text Notes 2500 4950 0    50   ~ 0
+Note: Determine whether external pull-ups are required for I2C
+Wire Wire Line
+	6250 4500 6950 4500
+Wire Wire Line
+	6250 4400 6950 4400
+Text HLabel 6950 4400 2    50   BiDi ~ 0
+USB_DP
+Text HLabel 6950 4500 2    50   BiDi ~ 0
+USB_DM
+Text HLabel 4300 4100 0    50   Input ~ 0
+CAN_RX
+Text HLabel 4300 4200 0    50   Output ~ 0
+CAN_TX
+Wire Wire Line
+	4300 4200 4950 4200
+Wire Wire Line
+	4300 4100 4950 4100
+Wire Wire Line
+	4300 3700 4950 3700
+Wire Wire Line
+	4950 3600 3900 3600
+Text Label 3900 3600 0    50   ~ 0
+TRACESWO
+Wire Wire Line
+	6250 4700 7200 4700
+Text Label 7200 4700 2    50   ~ 0
+SWCLK
+Wire Wire Line
+	6250 4600 7200 4600
+Text Label 7200 4600 2    50   ~ 0
+SWDIO
+Wire Wire Line
+	6250 3300 6950 3300
+Text HLabel 6950 3500 2    50   Output ~ 0
+UART_TX
+Text HLabel 6950 3600 2    50   Input ~ 0
+UART_RX
+Wire Wire Line
+	6250 3400 6950 3400
+Wire Wire Line
+	6950 3500 6250 3500
+Wire Wire Line
+	6250 3600 6950 3600
+Text HLabel 6950 3400 2    50   BiDi ~ 0
+UART_RTS
+Text HLabel 6950 3300 2    50   BiDi ~ 0
+UART_CTS
+Wire Wire Line
+	4950 2200 3950 2200
+Text Label 3950 2200 0    50   ~ 0
+~RST
+Wire Wire Line
+	4950 2600 3950 2600
+Text Label 3950 2600 0    50   ~ 0
+OSC_IN
+Wire Wire Line
+	4950 2700 3950 2700
+Text Label 3950 2700 0    50   ~ 0
+OSC_OUT
+Wire Wire Line
+	4950 2400 3950 2400
+Text Label 3950 2400 0    50   ~ 0
+BOOT0
+NoConn ~ 9350 4150
+Wire Wire Line
+	4300 4000 4950 4000
+Wire Wire Line
+	6250 4800 6950 4800
+Wire Wire Line
+	4300 4800 4950 4800
+Wire Wire Line
+	4950 4700 4300 4700
+Wire Wire Line
+	4950 4600 4300 4600
+Text HLabel 4300 4600 0    50   BiDi ~ 0
+SPI_SCK
+Text HLabel 4300 4700 0    50   BiDi ~ 0
+SPI_MISO
+Text HLabel 4300 4800 0    50   BiDi ~ 0
+SPI_MOSI
+Wire Wire Line
+	4300 4500 4950 4500
+Text HLabel 4300 4500 0    50   BiDi ~ 0
+SPI_NSS
 $EndSCHEMATC

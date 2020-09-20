@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -1034,7 +1034,7 @@ Text HLabel 9000 5600 2    50   BiDi ~ 0
 I2C_SDA
 Text HLabel 9000 5700 2    50   BiDi ~ 0
 I2C_SCL
-Text HLabel 9000 5900 2    50   BiDi ~ 0
+Text HLabel 9000 5900 2    50   Output ~ 0
 CURRENT_ALRT
 Wire Notes Line
 	6450 6450 9650 6450
