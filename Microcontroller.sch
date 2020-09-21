@@ -16,93 +16,93 @@ $EndDescr
 $Comp
 L MCU_ST_STM32F3:STM32F302C6Tx U?
 U 1 1 5F654695
-P 5650 3500
-F 0 "U?" H 6250 4750 50  0000 C CNN
-F 1 "STM32F302C6Tx" H 6500 4850 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5050 2100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00093333.pdf" H 5650 3500 50  0001 C CNN
-	1    5650 3500
+P 9100 2750
+F 0 "U?" H 9700 4000 50  0000 C CNN
+F 1 "STM32F302C6Tx" H 9950 4100 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 8500 1350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00093333.pdf" H 9100 2750 50  0001 C CNN
+	1    9100 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2000 5750 1850
+	9200 1250 9200 1100
 Wire Wire Line
-	5750 1850 5650 1850
+	9200 1100 9100 1100
 Wire Wire Line
-	5450 1850 5450 2000
+	8900 1100 8900 1250
 Wire Wire Line
-	5550 2000 5550 1850
-Connection ~ 5550 1850
+	9000 1250 9000 1100
+Connection ~ 9000 1100
 Wire Wire Line
-	5550 1850 5450 1850
+	9000 1100 8900 1100
 Wire Wire Line
-	5650 2000 5650 1850
-Connection ~ 5650 1850
+	9100 1250 9100 1100
+Connection ~ 9100 1100
 Wire Wire Line
-	5650 1850 5550 1850
-Connection ~ 5450 1850
+	9100 1100 9000 1100
+Connection ~ 8900 1100
 Wire Wire Line
-	5450 1700 5450 1850
+	8900 950  8900 1100
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F657669
-P 5450 1700
-F 0 "#PWR?" H 5450 1550 50  0001 C CNN
-F 1 "+3V3" H 5465 1873 50  0000 C CNN
-F 2 "" H 5450 1700 50  0001 C CNN
-F 3 "" H 5450 1700 50  0001 C CNN
-	1    5450 1700
+P 8900 950
+F 0 "#PWR?" H 8900 800 50  0001 C CNN
+F 1 "+3V3" H 8915 1123 50  0000 C CNN
+F 2 "" H 8900 950 50  0001 C CNN
+F 3 "" H 8900 950 50  0001 C CNN
+	1    8900 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 5000 5450 5100
+	8900 4250 8900 4350
 Wire Wire Line
-	5450 5100 5550 5100
+	8900 4350 9000 4350
 Wire Wire Line
-	5650 5100 5650 5000
+	9100 4350 9100 4250
 Wire Wire Line
-	5550 5000 5550 5100
-Connection ~ 5550 5100
+	9000 4250 9000 4350
+Connection ~ 9000 4350
 Wire Wire Line
-	5550 5100 5650 5100
+	9000 4350 9100 4350
 Wire Wire Line
-	5450 5100 5450 5200
-Connection ~ 5450 5100
+	8900 4350 8900 4450
+Connection ~ 8900 4350
 $Comp
 L power:GND #PWR?
 U 1 1 5F657E4B
-P 5450 5200
-F 0 "#PWR?" H 5450 4950 50  0001 C CNN
-F 1 "GND" H 5455 5027 50  0000 C CNN
-F 2 "" H 5450 5200 50  0001 C CNN
-F 3 "" H 5450 5200 50  0001 C CNN
-	1    5450 5200
+P 8900 4450
+F 0 "#PWR?" H 8900 4200 50  0001 C CNN
+F 1 "GND" H 8905 4277 50  0000 C CNN
+F 2 "" H 8900 4450 50  0001 C CNN
+F 3 "" H 8900 4450 50  0001 C CNN
+	1    8900 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5F65872F
-P 5750 5200
-F 0 "#PWR?" H 5750 4950 50  0001 C CNN
-F 1 "GNDA" H 5755 5027 50  0000 C CNN
-F 2 "" H 5750 5200 50  0001 C CNN
-F 3 "" H 5750 5200 50  0001 C CNN
-	1    5750 5200
+P 9200 4450
+F 0 "#PWR?" H 9200 4200 50  0001 C CNN
+F 1 "GNDA" H 9205 4277 50  0000 C CNN
+F 2 "" H 9200 4450 50  0001 C CNN
+F 3 "" H 9200 4450 50  0001 C CNN
+	1    9200 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 5200 5750 5000
+	9200 4450 9200 4250
 Wire Wire Line
-	5850 2000 5850 1700
+	9300 1250 9300 950 
 $Comp
 L power:+3.3VA #PWR?
 U 1 1 5F65932B
-P 5850 1700
-F 0 "#PWR?" H 5850 1550 50  0001 C CNN
-F 1 "+3.3VA" H 5865 1873 50  0000 C CNN
-F 2 "" H 5850 1700 50  0001 C CNN
-F 3 "" H 5850 1700 50  0001 C CNN
-	1    5850 1700
+P 9300 950
+F 0 "#PWR?" H 9300 800 50  0001 C CNN
+F 1 "+3.3VA" H 9315 1123 50  0000 C CNN
+F 2 "" H 9300 950 50  0001 C CNN
+F 3 "" H 9300 950 50  0001 C CNN
+	1    9300 950 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -404,102 +404,316 @@ Wire Wire Line
 Wire Notes Line
 	6900 6700 6900 7700
 Wire Notes Line
-	6900 7700 3750 7700
+	6900 7700 3900 7700
 Wire Notes Line
-	3750 7700 3750 6700
+	3900 7700 3900 6700
 Wire Notes Line
-	3750 6700 6900 6700
-Text Notes 3750 6650 0    50   ~ 0
+	3900 6700 6900 6700
+Text Notes 3900 6650 0    50   ~ 0
 Microcontroller Decoupling
-Text HLabel 4300 3700 0    50   Input ~ 0
+Text HLabel 7750 2950 0    50   Input ~ 0
 CURRENT_ALRT
-Text HLabel 4300 4000 0    50   BiDi ~ 0
+Text HLabel 7750 3250 0    50   BiDi ~ 0
 I2C_SDA
-Text HLabel 6950 4800 2    50   BiDi ~ 0
+Text HLabel 10400 4050 2    50   BiDi ~ 0
 I2C_SCL
-Text Notes 2500 4950 0    50   ~ 0
-Note: Determine whether external pull-ups are required for I2C
 Wire Wire Line
-	6250 4500 6950 4500
+	9700 3750 10400 3750
 Wire Wire Line
-	6250 4400 6950 4400
-Text HLabel 6950 4400 2    50   BiDi ~ 0
+	9700 3650 10400 3650
+Text HLabel 10400 3650 2    50   BiDi ~ 0
 USB_DP
-Text HLabel 6950 4500 2    50   BiDi ~ 0
+Text HLabel 10400 3750 2    50   BiDi ~ 0
 USB_DM
-Text HLabel 4300 4100 0    50   Input ~ 0
-CAN_RX
-Text HLabel 4300 4200 0    50   Output ~ 0
-CAN_TX
 Wire Wire Line
-	4300 4200 4950 4200
+	7750 2950 8400 2950
 Wire Wire Line
-	4300 4100 4950 4100
-Wire Wire Line
-	4300 3700 4950 3700
-Wire Wire Line
-	4950 3600 3900 3600
-Text Label 3900 3600 0    50   ~ 0
+	8400 2850 7350 2850
+Text Label 7350 2850 0    50   ~ 0
 TRACESWO
 Wire Wire Line
-	6250 4700 7200 4700
-Text Label 7200 4700 2    50   ~ 0
+	9700 3950 10650 3950
+Text Label 10650 3950 2    50   ~ 0
 SWCLK
 Wire Wire Line
-	6250 4600 7200 4600
-Text Label 7200 4600 2    50   ~ 0
+	9700 3850 10650 3850
+Text Label 10650 3850 2    50   ~ 0
 SWDIO
 Wire Wire Line
-	6250 3300 6950 3300
-Text HLabel 6950 3500 2    50   Output ~ 0
+	9700 2550 10400 2550
+Text HLabel 10400 2750 2    50   Output ~ 0
 UART_TX
-Text HLabel 6950 3600 2    50   Input ~ 0
+Text HLabel 10400 2850 2    50   Input ~ 0
 UART_RX
 Wire Wire Line
-	6250 3400 6950 3400
+	9700 2650 10400 2650
 Wire Wire Line
-	6950 3500 6250 3500
+	10400 2750 9700 2750
 Wire Wire Line
-	6250 3600 6950 3600
-Text HLabel 6950 3400 2    50   BiDi ~ 0
+	9700 2850 10400 2850
+Text HLabel 10400 2650 2    50   BiDi ~ 0
 UART_RTS
-Text HLabel 6950 3300 2    50   BiDi ~ 0
+Text HLabel 10400 2550 2    50   BiDi ~ 0
 UART_CTS
 Wire Wire Line
-	4950 2200 3950 2200
-Text Label 3950 2200 0    50   ~ 0
+	8400 1450 7400 1450
+Text Label 7400 1450 0    50   ~ 0
 ~RST
 Wire Wire Line
-	4950 2600 3950 2600
-Text Label 3950 2600 0    50   ~ 0
+	8400 1850 7400 1850
+Text Label 7400 1850 0    50   ~ 0
 OSC_IN
 Wire Wire Line
-	4950 2700 3950 2700
-Text Label 3950 2700 0    50   ~ 0
+	8400 1950 7400 1950
+Text Label 7400 1950 0    50   ~ 0
 OSC_OUT
 Wire Wire Line
-	4950 2400 3950 2400
-Text Label 3950 2400 0    50   ~ 0
+	8400 1650 7400 1650
+Text Label 7400 1650 0    50   ~ 0
 BOOT0
-NoConn ~ 9350 4150
 Wire Wire Line
-	4300 4000 4950 4000
+	7750 4050 8400 4050
 Wire Wire Line
-	6250 4800 6950 4800
+	8400 3950 7750 3950
 Wire Wire Line
-	4300 4800 4950 4800
-Wire Wire Line
-	4950 4700 4300 4700
-Wire Wire Line
-	4950 4600 4300 4600
-Text HLabel 4300 4600 0    50   BiDi ~ 0
+	8400 3850 7750 3850
+Text HLabel 7750 3850 0    50   BiDi ~ 0
 SPI_SCK
-Text HLabel 4300 4700 0    50   BiDi ~ 0
+Text HLabel 7750 3950 0    50   BiDi ~ 0
 SPI_MISO
-Text HLabel 4300 4800 0    50   BiDi ~ 0
+Text HLabel 7750 4050 0    50   BiDi ~ 0
 SPI_MOSI
 Wire Wire Line
-	4300 4500 4950 4500
-Text HLabel 4300 4500 0    50   BiDi ~ 0
+	7750 3750 8400 3750
+Text HLabel 7750 3750 0    50   BiDi ~ 0
 SPI_NSS
+Wire Notes Line
+	11050 4850 7100 4850
+Wire Notes Line
+	7100 4850 7100 650 
+Wire Notes Line
+	7100 650  11050 650 
+Wire Notes Line
+	11050 650  11050 4850
+Text Notes 7100 600  0    50   ~ 0
+Microcontroller Pinout
+Wire Wire Line
+	9700 4050 10400 4050
+Wire Wire Line
+	7750 3250 8400 3250
+$Comp
+L ReflowOven:NCV7357 U?
+U 1 1 5F6C3802
+P 1750 6800
+F 0 "U?" H 2000 7200 50  0000 C CNN
+F 1 "NCV7357" H 1600 7200 50  0000 C CNN
+F 2 "" H 1650 7000 50  0001 C CNN
+F 3 "" H 1650 7000 50  0001 C CNN
+	1    1750 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7000 1250 7000
+Wire Wire Line
+	1250 7000 1250 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5F6C9398
+P 1250 7100
+F 0 "#PWR?" H 1250 6850 50  0001 C CNN
+F 1 "GND" H 1255 6927 50  0000 C CNN
+F 2 "" H 1250 7100 50  0001 C CNN
+F 3 "" H 1250 7100 50  0001 C CNN
+	1    1250 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F6C993C
+P 1200 6450
+F 0 "#PWR?" H 1200 6300 50  0001 C CNN
+F 1 "+3V3" H 1215 6623 50  0000 C CNN
+F 2 "" H 1200 6450 50  0001 C CNN
+F 3 "" H 1200 6450 50  0001 C CNN
+	1    1200 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6450 1200 6550
+Wire Wire Line
+	1200 6550 1350 6550
+Wire Wire Line
+	1350 6700 1000 6700
+Wire Wire Line
+	1350 6850 1000 6850
+Text HLabel 1000 6700 0    50   BiDi ~ 0
+CANH
+Text HLabel 1000 6850 0    50   BiDi ~ 0
+CANL
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F6D6BB3
+P 800 6100
+F 0 "#PWR?" H 800 5950 50  0001 C CNN
+F 1 "+3V3" H 815 6273 50  0000 C CNN
+F 2 "" H 800 6100 50  0001 C CNN
+F 3 "" H 800 6100 50  0001 C CNN
+	1    800  6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F6D6BB9
+P 800 6250
+F 0 "C?" H 892 6296 50  0000 L CNN
+F 1 "0.1u" H 892 6205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 800 6250 50  0001 C CNN
+F 3 "~" H 800 6250 50  0001 C CNN
+	1    800  6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6D6BBF
+P 800 6400
+F 0 "#PWR?" H 800 6150 50  0001 C CNN
+F 1 "GND" H 805 6227 50  0000 C CNN
+F 2 "" H 800 6400 50  0001 C CNN
+F 3 "" H 800 6400 50  0001 C CNN
+	1    800  6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6400 800  6350
+Wire Wire Line
+	800  6150 800  6100
+Wire Wire Line
+	8400 3350 7350 3350
+Text Label 7350 3350 0    50   ~ 0
+CAN_RX
+Text Label 7350 3450 0    50   ~ 0
+CAN_TX
+Wire Wire Line
+	7350 3450 8400 3450
+Wire Wire Line
+	2150 6700 2750 6700
+Text Label 2750 6700 2    50   ~ 0
+CAN_RX
+Wire Wire Line
+	2150 6850 2750 6850
+Text Label 2750 6850 2    50   ~ 0
+CAN_TX
+Wire Wire Line
+	2150 7000 2250 7000
+Text Label 2750 7000 2    50   ~ 0
+CAN_SIL
+Wire Wire Line
+	8400 2150 7400 2150
+Text Label 7400 2150 0    50   ~ 0
+CAN_SIL
+$Comp
+L Device:R_Small R?
+U 1 1 5F6FEA9A
+P 2250 7200
+F 0 "R?" H 2309 7246 50  0000 L CNN
+F 1 "4.7k" H 2309 7155 50  0000 L CNN
+F 2 "" H 2250 7200 50  0001 C CNN
+F 3 "~" H 2250 7200 50  0001 C CNN
+	1    2250 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 7100 2250 7000
+Connection ~ 2250 7000
+Wire Wire Line
+	2250 7000 2750 7000
+Wire Wire Line
+	2250 7300 2250 7400
+$Comp
+L power:GND #PWR?
+U 1 1 5F702399
+P 2250 7400
+F 0 "#PWR?" H 2250 7150 50  0001 C CNN
+F 1 "GND" H 2255 7227 50  0000 C CNN
+F 2 "" H 2250 7400 50  0001 C CNN
+F 3 "" H 2250 7400 50  0001 C CNN
+	1    2250 7400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2800 7700 550  7700
+Wire Notes Line
+	550  7700 550  5750
+Wire Notes Line
+	550  5750 2800 5750
+Wire Notes Line
+	2800 5750 2800 7700
+Text Notes 550  5700 0    50   ~ 0
+CAN Transciever
+Text HLabel 3300 7400 0    50   BiDi ~ 0
+I2C_SCL
+Text HLabel 3300 7500 0    50   BiDi ~ 0
+I2C_SDA
+Wire Wire Line
+	3300 7500 3550 7500
+Wire Wire Line
+	3550 7500 3550 7250
+Wire Wire Line
+	3300 7400 3350 7400
+Wire Wire Line
+	3350 7400 3350 7250
+$Comp
+L Device:R_Small R?
+U 1 1 5F711CC9
+P 3550 7150
+F 0 "R?" H 3609 7196 50  0000 L CNN
+F 1 "4.7k" H 3609 7105 50  0000 L CNN
+F 2 "" H 3550 7150 50  0001 C CNN
+F 3 "~" H 3550 7150 50  0001 C CNN
+	1    3550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F712132
+P 3350 7150
+F 0 "R?" H 3291 7104 50  0000 R CNN
+F 1 "4.7k" H 3291 7195 50  0000 R CNN
+F 2 "" H 3350 7150 50  0001 C CNN
+F 3 "~" H 3350 7150 50  0001 C CNN
+	1    3350 7150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3350 7050 3350 6950
+Wire Wire Line
+	3350 6950 3450 6950
+Wire Wire Line
+	3550 6950 3550 7050
+Wire Wire Line
+	3450 6950 3450 6850
+Connection ~ 3450 6950
+Wire Wire Line
+	3450 6950 3550 6950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F71C4F8
+P 3450 6850
+F 0 "#PWR?" H 3450 6700 50  0001 C CNN
+F 1 "+3V3" H 3465 7023 50  0000 C CNN
+F 2 "" H 3450 6850 50  0001 C CNN
+F 3 "" H 3450 6850 50  0001 C CNN
+	1    3450 6850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2900 6450 2900 7700
+Wire Notes Line
+	2900 7700 3800 7700
+Wire Notes Line
+	3800 7700 3800 6450
+Wire Notes Line
+	3800 6450 2900 6450
+Text Notes 2900 6400 0    50   ~ 0
+I2C Pullup Resistors
 $EndSCHEMATC
