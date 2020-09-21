@@ -464,10 +464,6 @@ Wire Wire Line
 Text Label 7400 1850 0    50   ~ 0
 OSC_IN
 Wire Wire Line
-	8400 1950 7400 1950
-Text Label 7400 1950 0    50   ~ 0
-OSC_OUT
-Wire Wire Line
 	8400 1650 7400 1650
 Text Label 7400 1650 0    50   ~ 0
 BOOT0
@@ -625,7 +621,7 @@ Wire Notes Line
 	500  7700 500  5750
 Wire Notes Line
 	2800 5750 2800 7700
-Text Notes 550  5700 0    50   ~ 0
+Text Notes 500  5700 0    50   ~ 0
 CAN Transciever
 Text HLabel 3300 7400 0    50   BiDi ~ 0
 I2C_SCL
@@ -787,4 +783,112 @@ Wire Wire Line
 	1050 6950 1050 7250
 Wire Wire Line
 	850  7250 1050 7250
+$Comp
+L ReflowOven:OSC_4PIN X?
+U 1 1 5F7EB02C
+P 1800 4750
+F 0 "X?" H 1775 5115 50  0000 C CNN
+F 1 "OSC_4PIN" H 1775 5024 50  0000 C CNN
+F 2 "" V 1750 4750 50  0001 C CNN
+F 3 "" V 1750 4750 50  0001 C CNN
+	1    1800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4650 2650 4650
+Text Label 2650 4650 2    50   ~ 0
+OSC_IN
+Wire Wire Line
+	2250 4900 2300 4900
+Wire Wire Line
+	2300 4900 2300 4500
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F7F8C2F
+P 2300 4500
+F 0 "#PWR?" H 2300 4350 50  0001 C CNN
+F 1 "+3V3" H 2315 4673 50  0000 C CNN
+F 2 "" H 2300 4500 50  0001 C CNN
+F 3 "" H 2300 4500 50  0001 C CNN
+	1    2300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4650 1200 4650
+Wire Wire Line
+	1200 4650 1200 4500
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F803440
+P 1200 4500
+F 0 "#PWR?" H 1200 4350 50  0001 C CNN
+F 1 "+3V3" H 1215 4673 50  0000 C CNN
+F 2 "" H 1200 4500 50  0001 C CNN
+F 3 "" H 1200 4500 50  0001 C CNN
+	1    1200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4900 1200 4900
+Wire Wire Line
+	1200 4900 1200 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5F80755B
+P 1200 5100
+F 0 "#PWR?" H 1200 4850 50  0001 C CNN
+F 1 "GND" H 1205 4927 50  0000 C CNN
+F 2 "" H 1200 5100 50  0001 C CNN
+F 3 "" H 1200 5100 50  0001 C CNN
+	1    1200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F809223
+P 900 4600
+F 0 "#PWR?" H 900 4450 50  0001 C CNN
+F 1 "+3V3" H 915 4773 50  0000 C CNN
+F 2 "" H 900 4600 50  0001 C CNN
+F 3 "" H 900 4600 50  0001 C CNN
+	1    900  4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F809229
+P 900 4800
+F 0 "C?" H 992 4846 50  0000 L CNN
+F 1 "0.1u" H 992 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 4800 50  0001 C CNN
+F 3 "~" H 900 4800 50  0001 C CNN
+	1    900  4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F80922F
+P 900 5000
+F 0 "#PWR?" H 900 4750 50  0001 C CNN
+F 1 "GND" H 905 4827 50  0000 C CNN
+F 2 "" H 900 5000 50  0001 C CNN
+F 3 "" H 900 5000 50  0001 C CNN
+	1    900  5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5000 900  4900
+Wire Wire Line
+	900  4700 900  4600
+Wire Notes Line
+	500  5550 500  4200
+Wire Notes Line
+	2800 4200 2800 5550
+Wire Notes Line
+	500  5550 2800 5550
+Text Notes 500  4150 0    50   ~ 0
+External Oscillator
+Wire Notes Line
+	500  4200 2800 4200
+NoConn ~ 8400 1950
 $EndSCHEMATC
