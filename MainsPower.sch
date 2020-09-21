@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -1040,4 +1040,66 @@ Wire Notes Line
 	6450 6450 9650 6450
 Wire Notes Line
 	6450 4600 9650 4600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F685D62
+P 9750 1450
+F 0 "#PWR?" H 9750 1300 50  0001 C CNN
+F 1 "+3V3" H 9765 1623 50  0000 C CNN
+F 2 "" H 9750 1450 50  0001 C CNN
+F 3 "" H 9750 1450 50  0001 C CNN
+	1    9750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F68672E
+P 9750 1900
+F 0 "D?" V 9789 1782 50  0000 R CNN
+F 1 "LED" V 9698 1782 50  0000 R CNN
+F 2 "" H 9750 1900 50  0001 C CNN
+F 3 "~" H 9750 1900 50  0001 C CNN
+	1    9750 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F686DA9
+P 9750 2150
+F 0 "#PWR?" H 9750 1900 50  0001 C CNN
+F 1 "GND" H 9755 1977 50  0000 C CNN
+F 2 "" H 9750 2150 50  0001 C CNN
+F 3 "" H 9750 2150 50  0001 C CNN
+	1    9750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2150 9750 2050
+Text Notes 9850 2150 0    50   ~ 0
+GRN LED
+$Comp
+L Device:R_Small R?
+U 1 1 5F68D65A
+P 9750 1600
+F 0 "R?" H 9809 1646 50  0000 L CNN
+F 1 "470" H 9809 1555 50  0000 L CNN
+F 2 "" H 9750 1600 50  0001 C CNN
+F 3 "~" H 9750 1600 50  0001 C CNN
+	1    9750 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 1500 9750 1450
+Wire Wire Line
+	9750 1700 9750 1750
+Wire Notes Line
+	9500 950  9500 2650
+Wire Notes Line
+	9500 2650 10250 2650
+Wire Notes Line
+	10250 2650 10250 950 
+Wire Notes Line
+	10250 950  9500 950 
+Text Notes 9500 900  0    50   ~ 0
+Power Status
 $EndSCHEMATC
