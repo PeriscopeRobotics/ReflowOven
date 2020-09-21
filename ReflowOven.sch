@@ -62,6 +62,8 @@ S 8600 4550 1700 1350
 U 5F641C10
 F0 "Communication" 50
 F1 "Communication.sch" 50
+F2 "USB_DP" I L 8600 5800 50 
+F3 "USB_DM" I L 8600 5700 50 
 $EndSheet
 Wire Wire Line
 	4500 3600 4500 2300
@@ -109,4 +111,16 @@ Connection ~ 4250 3800
 Wire Wire Line
 	4150 3900 3350 3900
 Connection ~ 4150 3900
+Wire Wire Line
+	6950 4850 7600 4850
+Wire Wire Line
+	7600 4850 7600 5800
+Wire Wire Line
+	7600 5800 8600 5800
+Wire Wire Line
+	8600 5700 7700 5700
+Wire Wire Line
+	7700 5700 7700 4750
+Wire Wire Line
+	7700 4750 6950 4750
 $EndSCHEMATC
