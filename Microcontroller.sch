@@ -512,21 +512,6 @@ F 3 "" H 1650 7000 50  0001 C CNN
 	1    1750 6800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 7000 1250 7000
-Wire Wire Line
-	1250 7000 1250 7100
-$Comp
-L power:GND #PWR?
-U 1 1 5F6C9398
-P 1250 7100
-F 0 "#PWR?" H 1250 6850 50  0001 C CNN
-F 1 "GND" H 1255 6927 50  0000 C CNN
-F 2 "" H 1250 7100 50  0001 C CNN
-F 3 "" H 1250 7100 50  0001 C CNN
-	1    1250 7100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F6C993C
@@ -542,51 +527,45 @@ Wire Wire Line
 	1200 6450 1200 6550
 Wire Wire Line
 	1200 6550 1350 6550
-Wire Wire Line
-	1350 6700 1000 6700
-Wire Wire Line
-	1350 6850 1000 6850
-Text HLabel 1000 6700 0    50   BiDi ~ 0
-CANH
-Text HLabel 1000 6850 0    50   BiDi ~ 0
+Text HLabel 800  7250 0    50   BiDi ~ 0
 CANL
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F6D6BB3
-P 800 6100
-F 0 "#PWR?" H 800 5950 50  0001 C CNN
-F 1 "+3V3" H 815 6273 50  0000 C CNN
-F 2 "" H 800 6100 50  0001 C CNN
-F 3 "" H 800 6100 50  0001 C CNN
-	1    800  6100
+P 2350 6100
+F 0 "#PWR?" H 2350 5950 50  0001 C CNN
+F 1 "+3V3" H 2365 6273 50  0000 C CNN
+F 2 "" H 2350 6100 50  0001 C CNN
+F 3 "" H 2350 6100 50  0001 C CNN
+	1    2350 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5F6D6BB9
-P 800 6250
-F 0 "C?" H 892 6296 50  0000 L CNN
-F 1 "0.1u" H 892 6205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 800 6250 50  0001 C CNN
-F 3 "~" H 800 6250 50  0001 C CNN
-	1    800  6250
+P 2350 6250
+F 0 "C?" H 2442 6296 50  0000 L CNN
+F 1 "0.1u" H 2442 6205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 6250 50  0001 C CNN
+F 3 "~" H 2350 6250 50  0001 C CNN
+	1    2350 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F6D6BBF
-P 800 6400
-F 0 "#PWR?" H 800 6150 50  0001 C CNN
-F 1 "GND" H 805 6227 50  0000 C CNN
-F 2 "" H 800 6400 50  0001 C CNN
-F 3 "" H 800 6400 50  0001 C CNN
-	1    800  6400
+P 2350 6400
+F 0 "#PWR?" H 2350 6150 50  0001 C CNN
+F 1 "GND" H 2355 6227 50  0000 C CNN
+F 2 "" H 2350 6400 50  0001 C CNN
+F 3 "" H 2350 6400 50  0001 C CNN
+	1    2350 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  6400 800  6350
+	2350 6400 2350 6350
 Wire Wire Line
-	800  6150 800  6100
+	2350 6150 2350 6100
 Wire Wire Line
 	8400 3350 7350 3350
 Text Label 7350 3350 0    50   ~ 0
@@ -643,7 +622,7 @@ $EndComp
 Wire Notes Line
 	2800 7700 550  7700
 Wire Notes Line
-	550  7700 550  5750
+	500  7700 500  5750
 Wire Notes Line
 	550  5750 2800 5750
 Wire Notes Line
@@ -716,4 +695,92 @@ Wire Notes Line
 	3800 6450 2900 6450
 Text Notes 2900 6400 0    50   ~ 0
 I2C Pullup Resistors
+$Comp
+L Device:R_Small R?
+U 1 1 5F74CF4E
+P 850 6650
+F 0 "R?" H 792 6604 50  0000 R CNN
+F 1 "60" H 792 6695 50  0000 R CNN
+F 2 "" H 850 6650 50  0001 C CNN
+F 3 "~" H 850 6650 50  0001 C CNN
+	1    850  6650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F74D653
+P 850 6950
+F 0 "R?" H 792 6904 50  0000 R CNN
+F 1 "60" H 792 6995 50  0000 R CNN
+F 2 "" H 850 6950 50  0001 C CNN
+F 3 "~" H 850 6950 50  0001 C CNN
+	1    850  6950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1350 7000 1300 7000
+Wire Wire Line
+	1050 6800 850  6800
+Wire Wire Line
+	850  6800 850  6750
+Wire Wire Line
+	850  6800 850  6850
+Connection ~ 850  6800
+Wire Wire Line
+	800  6350 850  6350
+Wire Wire Line
+	850  6350 850  6550
+Wire Wire Line
+	800  7250 850  7250
+Wire Wire Line
+	850  7250 850  7050
+Text HLabel 800  6350 0    50   BiDi ~ 0
+CANH
+Wire Wire Line
+	1050 6900 1050 6800
+$Comp
+L Device:C_Small C?
+U 1 1 5F7517A6
+P 1050 7000
+F 0 "C?" H 1050 7100 50  0000 L CNN
+F 1 "0.1u" H 1050 6900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1050 7000 50  0001 C CNN
+F 3 "~" H 1050 7000 50  0001 C CNN
+	1    1050 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 7150 1050 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5F6C9398
+P 1300 7250
+F 0 "#PWR?" H 1300 7000 50  0001 C CNN
+F 1 "GND" H 1305 7077 50  0000 C CNN
+F 2 "" H 1300 7250 50  0001 C CNN
+F 3 "" H 1300 7250 50  0001 C CNN
+	1    1300 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 7250 1300 7150
+Wire Wire Line
+	1300 7000 1300 7150
+Connection ~ 1300 7150
+Wire Wire Line
+	1050 7150 1300 7150
+Wire Wire Line
+	850  6350 1050 6350
+Wire Wire Line
+	1050 6350 1050 6700
+Wire Wire Line
+	1050 6700 1350 6700
+Connection ~ 850  6350
+Wire Wire Line
+	850  7250 950  7250
+Connection ~ 850  7250
+Wire Wire Line
+	950  7250 950  6850
+Wire Wire Line
+	950  6850 1350 6850
 $EndSCHEMATC
