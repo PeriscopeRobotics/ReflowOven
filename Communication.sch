@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	1850 1850 2050 1850
-Text HLabel 4450 1850 2    50   Input ~ 0
+Text HLabel 4450 1850 2    50   BiDi ~ 0
 USB_DP
 Wire Wire Line
 	1850 1650 2050 1650
@@ -116,7 +116,7 @@ F 3 "" H 2450 1450 50  0001 C CNN
 	1    2450 1450
 	1    0    0    -1  
 $EndComp
-Text HLabel 4450 1750 2    50   Input ~ 0
+Text HLabel 4450 1750 2    50   BiDi ~ 0
 USB_DM
 NoConn ~ 1850 2350
 NoConn ~ 1850 2250
@@ -256,4 +256,130 @@ Wire Notes Line
 	5050 650  550  650 
 Text Notes 550  600  0    50   ~ 0
 USB Connection
+Text HLabel 5800 1200 2    50   Output ~ 0
+UART_TX
+Text HLabel 5800 1300 2    50   Input ~ 0
+UART_RX
+Text HLabel 5800 1400 2    50   BiDi ~ 0
+UART_RTS
+Text HLabel 5800 1500 2    50   BiDi ~ 0
+UART_CTS
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5F695AB7
+P 5450 1400
+F 0 "J?" H 5422 1328 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 5422 1373 50  0001 R CNN
+F 2 "" H 5450 1400 50  0001 C CNN
+F 3 "~" H 5450 1400 50  0001 C CNN
+	1    5450 1400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5800 1200 5650 1200
+Wire Wire Line
+	5800 1300 5650 1300
+Wire Wire Line
+	5800 1400 5650 1400
+Wire Wire Line
+	5800 1500 5650 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5F699450
+P 7250 1500
+F 0 "#PWR?" H 7250 1250 50  0001 C CNN
+F 1 "GND" H 7255 1327 50  0000 C CNN
+F 2 "" H 7250 1500 50  0001 C CNN
+F 3 "" H 7250 1500 50  0001 C CNN
+	1    7250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1600 5650 1600
+Wire Wire Line
+	5800 1600 5800 1750
+Wire Wire Line
+	5650 1100 5800 1100
+Wire Wire Line
+	5800 1100 5800 950 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F69C601
+P 5800 950
+F 0 "#PWR?" H 5800 800 50  0001 C CNN
+F 1 "+3V3" H 5815 1123 50  0000 C CNN
+F 2 "" H 5800 950 50  0001 C CNN
+F 3 "" H 5800 950 50  0001 C CNN
+	1    5800 950 
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	5150 650  5150 2250
+Wire Notes Line
+	5150 2250 6600 2250
+Wire Notes Line
+	6600 2250 6600 650 
+Wire Notes Line
+	6600 650  5150 650 
+Text Notes 5150 600  0    50   ~ 0
+UART Connector
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5F6AA35C
+P 6900 1250
+F 0 "J?" H 6873 1178 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 6872 1223 50  0001 R CNN
+F 2 "" H 6900 1250 50  0001 C CNN
+F 3 "~" H 6900 1250 50  0001 C CNN
+	1    6900 1250
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6AD280
+P 5800 1750
+F 0 "#PWR?" H 5800 1500 50  0001 C CNN
+F 1 "GND" H 5805 1577 50  0000 C CNN
+F 2 "" H 5800 1750 50  0001 C CNN
+F 3 "" H 5800 1750 50  0001 C CNN
+	1    5800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1500 7250 1350
+Wire Wire Line
+	7250 1350 7100 1350
+Wire Wire Line
+	7100 1050 7250 1050
+Wire Wire Line
+	7250 1050 7250 900 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F6AF4CD
+P 7250 900
+F 0 "#PWR?" H 7250 750 50  0001 C CNN
+F 1 "+3V3" H 7265 1073 50  0000 C CNN
+F 2 "" H 7250 900 50  0001 C CNN
+F 3 "" H 7250 900 50  0001 C CNN
+	1    7250 900 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1150 7400 1150
+Wire Wire Line
+	7100 1250 7400 1250
+Text HLabel 7400 1150 2    50   BiDi ~ 0
+CANH
+Text HLabel 7400 1250 2    50   BiDi ~ 0
+CANL
+Wire Notes Line
+	6700 650  6700 1800
+Wire Notes Line
+	6700 1800 8150 1800
+Wire Notes Line
+	8150 1800 8150 650 
+Wire Notes Line
+	8150 650  6700 650 
+Text Notes 6700 600  0    50   ~ 0
+CAN Connector
 $EndSCHEMATC

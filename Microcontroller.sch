@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -1408,14 +1408,20 @@ Wire Wire Line
 	4250 2700 4650 2700
 Text Label 5150 2200 2    50   ~ 0
 LEDS
-NoConn ~ 8500 5250
-NoConn ~ 8500 5150
 NoConn ~ 8500 4350
 NoConn ~ 8500 4250
 NoConn ~ 8500 4150
 NoConn ~ 8500 3950
 NoConn ~ 8500 3850
 NoConn ~ 8500 4750
+Wire Wire Line
+	8500 5150 7850 5150
+Text HLabel 7850 5150 0    50   Input ~ 0
+SD_WR_PROT
+Wire Wire Line
+	8500 5250 7850 5250
+Text HLabel 7850 5250 0    50   Input ~ 0
+SD_DET
 Wire Bus Line
 	10400 4650 10400 5150
 Wire Bus Line
