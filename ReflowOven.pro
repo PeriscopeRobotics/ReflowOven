@@ -1,4 +1,4 @@
-update=9/17/2020 6:53:51 PM
+update=9/24/2020 9:39:25 PM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=schematic_layout.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=PDFs/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
