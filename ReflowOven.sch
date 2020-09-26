@@ -231,4 +231,16 @@ F7 "UART_CTS" B L 8450 5050 50
 F8 "CANH" B L 8450 4800 50 
 F9 "CANL" B L 8450 4900 50 
 $EndSheet
+Text Notes 5200 5650 0    50   ~ 0
+Designators 200+
+Text Notes 1900 4750 0    50   ~ 0
+Designators 600+
+Text Notes 1900 2850 0    50   ~ 0
+Designators 500+
+Text Notes 5200 2900 0    50   ~ 0
+Designators 300+
+Text Notes 9400 4050 0    50   ~ 0
+Designators 400+
+Text Notes 9400 5950 0    50   ~ 0
+Designators 700+
 $EndSCHEMATC
