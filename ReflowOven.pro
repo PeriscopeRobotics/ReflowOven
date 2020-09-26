@@ -1,4 +1,4 @@
-update=9/24/2020 9:39:25 PM
+update=9/25/2020 8:41:18 PM
 version=1
 last_client=kicad
 [general]
@@ -37,7 +37,7 @@ PageLayoutDescrFile=schematic_layout.kicad_wks
 PlotDirectoryName=PDFs/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
