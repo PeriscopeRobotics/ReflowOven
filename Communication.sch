@@ -25,7 +25,7 @@ U 1 1 5F6A4CDA
 P 1250 1750
 F 0 "J704" H 900 2600 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1350 2500 50  0000 C CNN
-F 2 "" H 1400 1750 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 1400 1750 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 1750 50  0001 C CNN
 	1    1250 1750
 	1    0    0    -1  
@@ -40,7 +40,7 @@ U 1 1 5F68858B
 P 2050 1150
 F 0 "F701" H 2050 1335 50  0000 C CNN
 F 1 "1A" H 2050 1244 50  0000 C CNN
-F 2 "" H 2050 1150 50  0001 C CNN
+F 2 "ReflowOven:FUSC6125X279N" H 2050 1150 50  0001 C CNN
 F 3 "~" H 2050 1150 50  0001 C CNN
 	1    2050 1150
 	1    0    0    -1  
@@ -327,7 +327,7 @@ U 1 1 5F6AA35C
 P 7100 1250
 F 0 "J702" H 7073 1178 50  0000 R CNN
 F 1 "Microfit-4pin" H 7072 1223 50  0001 R CNN
-F 2 "" H 7100 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x02_P1.00mm_Vertical" H 7100 1250 50  0001 C CNN
 F 3 "~" H 7100 1250 50  0001 C CNN
 	1    7100 1250
 	1    0    0    1   
