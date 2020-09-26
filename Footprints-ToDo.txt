@@ -1,11 +1,11 @@
 [ ] F501, F502, F701 - Non Standard Fuse 
-[ ] J401 - SDCARD
+[X] J401 - SDCARD
 [ ] J501 - IEC320
 [ ] J502 - IEC-NEMA
 [ ] J601 - Thermocouple Connector
 [X] J701 - STD 0.1" 3 pin
 [ ] J702 - CAN Connector - Want Microfit
-[ ] J703 - UART Connector - Want FTDI
+[X] J703 - UART Connector - Want FTDI
 [ ] J704 - USB Connector
 [ ] K501 - Non Standard Relay Pinout
 [ ] L701 - Common Mode Choke
