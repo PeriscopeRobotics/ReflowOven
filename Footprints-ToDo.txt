@@ -2,7 +2,7 @@
 [X] J401 - SDCARD
 [ ] J501 - IEC320
 [ ] J502 - IEC-NEMA
-[ ] J601 - Thermocouple Connector
+[X] J601 - Thermocouple Connector
 [X] J701 - STD 0.1" 3 pin
 [ ] J702 - CAN Connector - Want Microfit
 [X] J703 - UART Connector - Want FTDI

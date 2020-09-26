@@ -102,13 +102,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J601
 U 1 1 5F71786F
-P 7300 4050
-F 0 "J601" H 7272 3932 50  0000 R CNN
-F 1 "Thermocouple_Conn" H 7272 4023 50  0000 R CNN
-F 2 "" H 7300 4050 50  0001 C CNN
-F 3 "~" H 7300 4050 50  0001 C CNN
-	1    7300 4050
-	-1   0    0    1   
+P 7300 3950
+F 0 "J601" H 7272 3832 50  0000 R CNN
+F 1 "Thermocouple_Conn" H 7272 3923 50  0000 R CNN
+F 2 "" H 7300 3950 50  0001 C CNN
+F 3 "~" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7100 3950 6250 3950
