@@ -16,7 +16,7 @@ $EndDescr
 Wire Wire Line
 	1850 1850 2050 1850
 Text HLabel 4450 1850 2    50   BiDi ~ 0
-USB_DP
+USB_D+
 Wire Wire Line
 	1850 1650 2050 1650
 $Comp
@@ -30,34 +30,6 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 17
 	1    1250 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 1150 2300 1150
-Wire Wire Line
-	1850 1150 1950 1150
-$Comp
-L Device:Fuse_Small F701
-U 1 1 5F68858B
-P 2050 1150
-F 0 "F701" H 2050 1335 50  0000 C CNN
-F 1 "1A" H 2050 1244 50  0000 C CNN
-F 2 "ReflowOven:FUSC6125X279N" H 2050 1150 50  0001 C CNN
-F 3 "~" H 2050 1150 50  0001 C CNN
-	1    2050 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0703
-U 1 1 5F687B2C
-P 2300 1100
-F 0 "#PWR0703" H 2300 950 50  0001 C CNN
-F 1 "+5V" H 2315 1273 50  0000 C CNN
-F 2 "" H 2300 1100 50  0001 C CNN
-F 3 "" H 2300 1100 50  0001 C CNN
-	1    2300 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1150 2300 1100
 Wire Wire Line
 	2050 1650 2050 1750
 Wire Wire Line
@@ -117,7 +89,7 @@ F 3 "" H 2450 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 1750 2    50   BiDi ~ 0
-USB_DM
+USB_D-
 NoConn ~ 1850 2350
 NoConn ~ 1850 2250
 $Comp
@@ -400,4 +372,5 @@ Wire Wire Line
 Wire Wire Line
 	5900 1100 5650 1100
 NoConn ~ 5800 950 
+NoConn ~ 1850 1150
 $EndSCHEMATC

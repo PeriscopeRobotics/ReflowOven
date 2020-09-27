@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:SD_Card J401
-U 1 1 5F6D3AE5
-P 2700 1600
-F 0 "J401" H 2700 2265 50  0000 C CNN
-F 1 "SD_Card" H 2700 2174 50  0000 C CNN
-F 2 "ReflowOven:AMPHENOL-10067847" H 2700 1600 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 2700 1600 50  0001 C CNN
-	1    2700 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 1800 1500 1800
 Wire Wire Line
@@ -77,39 +66,6 @@ Text HLabel 1400 1400 0    50   BiDi ~ 0
 SPI_MOSI
 Text HLabel 1400 1300 0    50   BiDi ~ 0
 SPI_NSS
-Wire Wire Line
-	3600 1700 3800 1700
-Wire Wire Line
-	3800 1700 3800 1800
-Wire Wire Line
-	3800 1800 3600 1800
-Connection ~ 3800 1800
-$Comp
-L Device:FerriteBead_Small FB401
-U 1 1 5F6D8C36
-P 3800 2050
-F 0 "FB401" H 3900 2096 50  0000 L CNN
-F 1 "FerriteBead_Small" H 3900 2005 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3730 2050 50  0001 C CNN
-F 3 "~" H 3800 2050 50  0001 C CNN
-	1    3800 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 1800 3800 1950
-Wire Wire Line
-	3800 2250 3800 2150
-$Comp
-L power:GND #PWR0103
-U 1 1 5F6D832A
-P 3800 2250
-F 0 "#PWR0103" H 3800 2000 50  0001 C CNN
-F 1 "GND" H 3805 2077 50  0000 C CNN
-F 2 "" H 3800 2250 50  0001 C CNN
-F 3 "" H 3800 2250 50  0001 C CNN
-	1    3800 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 1500 4000 1500
 Text HLabel 4000 1500 2    50   Output ~ 0
@@ -169,8 +125,6 @@ Wire Wire Line
 	700  1750 700  1650
 Wire Wire Line
 	700  1450 700  1350
-Text Label 10850 5450 2    50   ~ 0
-SW_BTN
 Wire Notes Line
 	7550 6450 11100 6450
 Wire Notes Line
@@ -304,6 +258,8 @@ $Comp
 L ReflowOven:74HC193 U401
 U 1 1 5F96114C
 P 5950 1300
+AR Path="/5F96114C" Ref="U401"  Part="1" 
+AR Path="/5F641779/5F96114C" Ref="U401"  Part="1" 
 F 0 "U401" H 5950 1815 50  0000 C CNN
 F 1 "74HC193" H 5950 1724 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5950 1300 50  0001 C CNN
@@ -315,6 +271,8 @@ $Comp
 L ReflowOven:74HC193 U403
 U 1 1 5F962338
 P 5950 3150
+AR Path="/5F962338" Ref="U403"  Part="1" 
+AR Path="/5F641779/5F962338" Ref="U403"  Part="1" 
 F 0 "U403" H 5950 3665 50  0000 C CNN
 F 1 "74HC193" H 5950 3574 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5950 3150 50  0001 C CNN
@@ -498,7 +456,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 4850 10250 4750
 Wire Wire Line
-	10350 5450 10850 5450
+	10350 5450 10600 5450
 $Comp
 L power:GND #PWR0108
 U 1 1 5F91BE95
@@ -1838,8 +1796,21 @@ F 3 "" H 5250 7250 50  0001 C CNN
 	2    5000 7250
 	1    0    0    -1  
 $EndComp
+$Comp
+L ReflowOven:SD-Card-NOSHELL U409
+U 1 1 5F75188E
+P 2700 1550
+F 0 "U409" H 2700 2165 50  0000 C CNN
+F 1 "SD-Card-NOSHELL" H 2700 2074 50  0000 C CNN
+F 2 "ReflowOven:AMPHENOL-10067847" H 2600 2350 50  0001 C CNN
+F 3 "" H 2600 2350 50  0001 C CNN
+	1    2700 1550
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	9850 1100 9850 1900
 Wire Bus Line
 	6850 1400 6850 3700
+Text HLabel 10600 5450 2    50   Input ~ 0
+SW_BTN
 $EndSCHEMATC

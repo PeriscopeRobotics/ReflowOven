@@ -536,7 +536,7 @@ F 1 "12A" V 5544 4550 50  0000 C CNN
 F 2 "ReflowOven:FUSC6125X279N" V 5580 4550 50  0001 C CNN
 F 3 "~" H 5650 4550 50  0001 C CNN
 	1    5650 4550
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5300 4550 5500 4550

@@ -92,19 +92,6 @@ F 3 "" H 9300 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9300 6050 9300 5850
-Wire Wire Line
-	9400 2850 9400 2550
-$Comp
-L power:+3.3VA #PWR0204
-U 1 1 5F65932B
-P 9400 2550
-F 0 "#PWR0204" H 9400 2400 50  0001 C CNN
-F 1 "+3.3VA" H 9415 2723 50  0000 C CNN
-F 2 "" H 9400 2550 50  0001 C CNN
-F 3 "" H 9400 2550 50  0001 C CNN
-	1    9400 2550
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR0223
 U 1 1 5F6596FC
@@ -418,9 +405,9 @@ I2C_SDA
 Text HLabel 10600 5650 2    50   BiDi ~ 0
 I2C_SCL
 Text HLabel 10600 5250 2    50   BiDi ~ 0
-USB_DP
+USB_D+
 Text HLabel 10600 5350 2    50   BiDi ~ 0
-USB_DM
+USB_D-
 Wire Wire Line
 	7850 4550 8500 4550
 Wire Wire Line
@@ -1410,7 +1397,6 @@ Text Label 5150 2200 2    50   ~ 0
 LEDS
 NoConn ~ 8500 3950
 NoConn ~ 8500 3850
-NoConn ~ 8500 4750
 Wire Wire Line
 	8500 5150 7850 5150
 Text HLabel 7850 5150 0    50   Input ~ 0
@@ -1431,8 +1417,17 @@ Text HLabel 7850 4150 0    50   Input Italic 0
 SW1
 Text HLabel 7850 4250 0    50   Input Italic 0
 SW2
+Wire Wire Line
+	8500 4750 7850 4750
+Text HLabel 7850 4750 0    50   Input Italic 0
+SW_BTN
+Wire Wire Line
+	9300 2700 9400 2700
+Wire Wire Line
+	9400 2700 9400 2850
 Wire Bus Line
 	10400 4650 10400 5150
 Wire Bus Line
 	4750 2200 4750 4450
+Connection ~ 9300 2700
 $EndSCHEMATC
