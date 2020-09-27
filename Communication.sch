@@ -339,9 +339,9 @@ Wire Wire Line
 Wire Wire Line
 	7300 1250 7600 1250
 Text HLabel 7600 1150 2    50   BiDi ~ 0
-CANH
+CAN+
 Text HLabel 7600 1250 2    50   BiDi ~ 0
-CANL
+CAN-
 Wire Notes Line
 	6700 650  6700 1800
 Wire Notes Line

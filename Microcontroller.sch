@@ -501,7 +501,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 6550 1250 6550
 Text HLabel 900  6850 0    50   BiDi ~ 0
-CANL
+CAN-
 $Comp
 L power:+3V3 #PWR0219
 U 1 1 5F6D6BB3
@@ -669,7 +669,7 @@ I2C Pullup Resistors
 Wire Wire Line
 	1250 7000 1200 7000
 Text HLabel 900  6700 0    50   BiDi ~ 0
-CANH
+CAN+
 $Comp
 L power:GND #PWR0231
 U 1 1 5F6C9398
