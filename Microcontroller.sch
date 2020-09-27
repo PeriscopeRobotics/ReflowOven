@@ -415,7 +415,7 @@ Wire Wire Line
 Text Label 7450 4450 0    50   ~ 0
 TRACESWO
 Text Label 10850 5550 2    50   ~ 0
-SWCLK
+SWDCLK
 Text Label 10850 5450 2    50   ~ 0
 SWDIO
 Wire Wire Line
@@ -1414,10 +1414,6 @@ Wire Wire Line
 	9300 2700 9400 2700
 Wire Wire Line
 	9400 2700 9400 2850
-Wire Bus Line
-	10400 4650 10400 5150
-Wire Bus Line
-	4750 2200 4750 4450
 Connection ~ 9300 2700
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J201
@@ -1430,4 +1426,8 @@ F 3 "~" H 1400 1900 50  0001 C CNN
 	1    1400 1900
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	10400 4650 10400 5150
+Wire Bus Line
+	4750 2200 4750 4450
 $EndSCHEMATC

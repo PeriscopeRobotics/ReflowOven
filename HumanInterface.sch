@@ -1807,10 +1807,10 @@ F 3 "" H 2600 2350 50  0001 C CNN
 	1    2700 1550
 	1    0    0    -1  
 $EndComp
+Text HLabel 10600 5450 2    50   Input ~ 0
+SW_BTN
 Wire Bus Line
 	9850 1100 9850 1900
 Wire Bus Line
 	6850 1400 6850 3700
-Text HLabel 10600 5450 2    50   Input ~ 0
-SW_BTN
 $EndSCHEMATC
