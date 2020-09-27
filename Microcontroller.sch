@@ -793,17 +793,6 @@ External Oscillator
 Wire Notes Line
 	500  4200 2800 4200
 NoConn ~ 8500 3550
-$Comp
-L Connector_Generic:Conn_02x05_Counter_Clockwise J201
-U 1 1 5F82EAA8
-P 1400 1900
-F 0 "J201" H 1450 2225 50  0000 C CNN
-F 1 "Conn_02x05_Counter_Clockwise" H 1450 2226 50  0001 C CNN
-F 2 "ReflowOven:CNC_3221-10-0100-00" H 1400 1900 50  0001 C CNN
-F 3 "~" H 1400 1900 50  0001 C CNN
-	1    1400 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 1700 1100 1700
 Wire Wire Line
@@ -1430,4 +1419,15 @@ Wire Bus Line
 Wire Bus Line
 	4750 2200 4750 4450
 Connection ~ 9300 2700
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J201
+U 1 1 5FA30A37
+P 1400 1900
+F 0 "J201" H 1450 2225 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 1450 2226 50  0001 C CNN
+F 2 "ReflowOven:CNC_3221-10-0100-00" H 1400 1900 50  0001 C CNN
+F 3 "~" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
