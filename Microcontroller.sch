@@ -1061,9 +1061,9 @@ Wire Notes Line
 Wire Notes Line
 	4100 6250 2900 6250
 Text HLabel 3300 6150 0    50   BiDi ~ 0
-CANL
+CAN-
 Text HLabel 3300 4950 0    50   BiDi ~ 0
-CANH
+CAN+
 $Comp
 L power:GND #PWR0215
 U 1 1 5F9F5A13
